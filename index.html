@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Recipe finder application </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Theam.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><svg height='40px' width='40px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path
+                        d="M4.34315 1.4082L22.3744 19.4394C22.9602 20.0252 22.9602 20.975 22.3744 21.5607C21.7886 22.1465 20.8388 22.1465 20.253 21.5607L15.6569 16.9646L12.1213 20.5001L4.34315 12.7219C1.2779 9.65666 1.22006 4.72285 4.16964 1.58709L4.34315 1.4082ZM4.58437 4.47838L4.5329 4.58823C3.56416 6.72709 3.91772 9.315 5.58066 11.1234L5.75736 11.3077L12.1207 17.6716L14.9491 14.8431L4.58437 4.47838Z">
+                    </path>
+                </svg>
+                Recipe finder
+            </h1>
+            <p>Find delicious recipes form around the world </p>
+            <p class="api-link">
+                Data form <a href="https://www.themealdb.com/api.php">TheMealDB 👨‍🍳</a>
+            </p>
+        </header>
+
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="search for a meal or keywords...">
+            <button id="Search-btn">Search</button>
+        </div>
+
+        <div id="Error-container" class="hidden">
+            <p>No meal found , try to search another meal or keyword </p>
+        </div>
+        <div id="Result-hading"></div>
+
+        <div class="meals-details">
+            <div id="meals-content">
+
+            </div>
+            <button id="back-btn"> <svg height='25px' width='25px' xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M22.0003 13.0001L22.0004 11.0002L5.82845 11.0002L9.77817 7.05044L8.36396 5.63623L2 12.0002L8.36396 18.3642L9.77817 16.9499L5.8284 13.0002L22.0003 13.0001Z">
+                    </path>
+                </svg><span>Back-to-recipe</span>
+            </button>
+        
+        </div>
+        <div class="specific-details hidden">
+           
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
